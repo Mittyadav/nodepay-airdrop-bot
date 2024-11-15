@@ -70,7 +70,7 @@ async function main() {
         .catch((err) => console.log(`❌ ${err.message}`.red));
     }
   }
-
+process.setMaxListeners(50);
   process.on('SIGINT', () => {
     console.log(`\n👋 ${'Shutting down...'.green}`);
     process.exit(0);
