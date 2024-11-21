@@ -95,7 +95,7 @@ class Bot {
       }
 
       await axios.post(this.config.pingURL, pingData, config);
-      console.log(`📡 ${'Ping sent'.cyan} for UID: ${uid}`);
+      console.log(`🛰️ ${'Ping sent'.cyan} for UID: ${uid}`);
       this.logger.info('Ping sent', {
         uid,
         browserId,
